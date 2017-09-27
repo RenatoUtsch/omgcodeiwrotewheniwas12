@@ -1,0 +1,44 @@
+// Copyright (c) LordEvil - Licensed under GNU GPL
+// For more information, see License.txt in the \wiki folder
+
+/// EvilUpdater - source\common\downloader.h
+
+#include <iostream>
+#include <Windows.h>
+#include <cstring>
+#include <cstdio>
+#include <fstream>
+#include <wininet.h> // For downloader
+
+/// Global Variables
+const int MAX_ERRMSG_SIZE = 80;
+
+/// Function Prototypes
+// Exception class for downloading errors.
+class DLExc
+{
+    char err[MAX_ERRMSG_SIZE];
+
+    public:
+    DLExc(char *exc)
+    {
+        if(strlen(exc) < MAX_ERRMSG_SIZE)
+            strcpy(err, exc);
+    }
+
+    const char * geterr()
+    {
+        return err;
+    }
+};
+
+class Download
+{
+    static bool httpverOK(HINTERNET hIurl);
+    static bool getfname(char *url, char *fname);
+    static unsigned long openfile(char *url, bool reload, ofstream &fout);
+
+    public:
+    static bool download(char *url, bool restart=false, void (*update)(unsigned long, unsigned long)=NULL);
+};
+

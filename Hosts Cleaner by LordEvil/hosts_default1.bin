@@ -1,0 +1,18 @@
+# Copyright (c) 1993-1999 Microsoft Corp.
+#
+# Este é um arquivo HOSTS de exemplo usado pelo Microsoft TCP/IP para Windows.
+#
+# Este arquivo contém os mapeamentos de endereços IP para nomes de host. Cada
+# entrada deve ser mantida em uma linha individual. O endereço IP deve
+# ser colocado na primeira coluna, seguido do nome de host correspondente.
+# O endereço IP e o nome do host devem ser separados por pelo menos um
+# espaço.
+#
+# Adicionalmente, comentários (como estes) podem ser inseridos em linhas
+# individuais ou após o nome de computador indicado por um símbolo '#'.
+#
+# Por exemplo:
+#
+#      102.54.94.97     rino.acme.com           # servidor de origem
+#       38.25.63.10     x.acme.com              # host cliente x
+127.0.0.1       localhost

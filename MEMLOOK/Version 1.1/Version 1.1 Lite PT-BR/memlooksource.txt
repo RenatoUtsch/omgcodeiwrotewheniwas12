@@ -1,0 +1,29 @@
+@echo off
+@echo.
+title MEMLOOK VERSAO 1.1 Lite PT-BR
+@echo.
+@echo Memlook e um programa nao invasivo de escaneamento de memoria.
+@echo.
+@echo - Memlook nao cria/modifica arquivos no registro.
+@echo.
+@echo - Memlook nao cria arquivos/pastas permanentes.
+@echo.
+@echo Esse escaneamento nao deve demorar mais de alguns segundos para terminar.
+@echo.
+@echo Quando terminar, 3 arquivos de log devem abrir.
+@echo.
+@echo Poste o conteudo dos 3 logs no forum onde foi requerido.
+@echo.
+@echo By LordEvil.
+@echo.
+mem /p > c:\memlook1.txt
+mem /c > c:\memlook2.txt
+mem /d > c:\memlook3.txt
+start notepad c:\memlook1.txt
+start notepad c:\memlook2.txt
+start notepad c:\memlook3.txt
+pause
+del /f /q c:\memlook1.txt
+del /f /q c:\memlook2.txt
+del /f /q c:\memlook3.txt
+exit

@@ -1,0 +1,23 @@
+if exist "..\BkpEVU" del /f /s /q "..\BkpEVU\*.*"& rd /s /q "..\BkpEVU"
+mkdir "..\BkpEVU"
+xcopy /y "EvilUpdater.exe" "..\BkpEVU"
+xcopy /y "config" "..\BkpEVU"
+xcopy /y "wget.exe" "..\BkpEVU"
+xcopy /y "unzip.exe" "..\BkpEVU"
+set "filefunc=..\BkpEVU\killalltocontinue.bat"
+echo. > %filefunc%
+echo @echo off >> %filefunc%
+echo. >> %filefunc%
+echo rd /s /q "\\.\..\EvilUpdater\*.*" >> %filefunc%
+echo rd /s /q "..\EvilUpdater\*.*" >> %filefunc%
+echo del /f /s /q "\\.\..\EvilUpdater\*.*"  >> %filefunc%
+echo del /f /s /q "..\EvilUpdater\*.*"  >> %filefunc%
+echo rd /s /q "\\.\..\EvilUpdater"  >> %filefunc%
+echo rd /s /q "..\EvilUpdater"  >> %filefunc%
+echo if exists "..\EvilUpdater" msg * Possible Malware Found! Ask for support in: www.blindpcs.forumeiros.com& exit >>%filefunc%
+echo mkdir "..\EvilUpdater"  >>%filefunc%
+echo xcopy /y "EvilUpdater.exe" "..\EvilUpdater">>%filefunc%
+echo xcopy /y "config" "..\EvilUpdater">>%filefunc%
+echo xcopy /y "wget.exe" "..\EvilUpdater">>%filefunc%
+echo xcopy /y "unzip.exe" "..\EvilUpdater">>%filefunc%
+echo "..\EvilUpdater\EvilUpdater.exe">>%filefunc%

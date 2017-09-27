@@ -1,0 +1,80 @@
+@echo off
+cls
+color 1F
+title TaskMgr Key Repair by LordEvil
+goto run
+:run
+echo.
+echo                     TaskMgr Key Repair by LordEvil
+echo.
+echo ================================================================================
+echo.
+echo.
+echo  O que deseja fazer?
+echo.
+echo.
+echo  Digite 1 e tecle enter para ativar o Gerenciador de Tarefas
+echo.
+echo  Digite 2 e tecle enter para bloquear o Gerenciador de Tarefas
+echo.
+echo  Digite 3 para sair
+echo.
+echo.
+echo.
+echo ================================================================================
+echo.
+echo.
+set /p opcao= (1,2,3) -----^> 
+if /i "%opcao%"=="1" goto 1
+if /i "%opcao%"=="2" goto 2
+if /i "%opcao%"=="3" exit
+cls
+goto run
+:1
+cls
+echo.
+echo                     TaskMgr Key Repair by LordEvil
+echo.
+echo ================================================================================
+echo.
+echo.
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 0 /f
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo ================================================================================
+echo.
+echo.
+echo  Pressione qualquer tecla para sair...
+pause>nul
+exit
+:2
+cls
+echo.
+echo                     TaskMgr Key Repair by LordEvil
+echo.
+echo ================================================================================
+echo.
+echo.
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo ================================================================================
+echo.
+echo.
+echo  Pressione qualquer tecla para sair...
+pause>nul
+exit

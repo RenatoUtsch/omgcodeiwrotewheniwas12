@@ -1,0 +1,61 @@
+@echo off
+title MEMLOOK VERSAO 1.4 Lite PT-BR
+echo.
+echo Memlook Lite e um programa nao invasivo de escaneamento de memoria.
+echo.
+echo - Memlook Lite nao cria/modifica arquivos no registro.
+echo.
+echo - Memlook Lite nao cria arquivos/pastas permanentes.
+echo.
+echo Esse escaneamento nao deve demorar mais de alguns segundos para terminar.
+echo.
+echo Quando terminar, 1 arquivo de log deve abrir.
+echo.
+echo Poste o conteudo dos log no forum onde foi solicitado.
+echo.
+echo By LordEvil.
+echo.
+set "report=%WINDIR%\MemLook.txt"
+echo =============================================== >> %report%
+echo MemLook 1.4 Lite PT-BR By LordEvil >> %report%
+echo Site Oficial: http://lordevilfiles.hd1.com.br >> %report%
+echo Início do escaneamento: %DATE%, às %TIME:~0,-9%:%TIME:~3,2%:%TIME:~6,2% >> %report%
+echo =============================================== >> %report%
+echo. >> %report%
+echo. >> %report%
+echo (((((((((((((((( Programas Carregados Na Memória )))))))))))))))) >> %report%
+echo. >> %report%
+mem /p >> %report%
+echo. >> %report%
+echo (((((((((((((((( Programas e Drivers )))))))))))))))) >> %report%
+echo. >> %report%
+mem /c >> %report%
+echo. >> %report%
+echo (((((((((((((((( Programas segundo uso da Memória )))))))))))))))) >> %report%
+echo. >> %report%
+mem /d >> %report%
+echo. >> %report%
+echo (((((((((((((((( --- EOF --- )))))))))))))))) >> %report%
+start notepad "%report%"
+mem > %windir%\m1.txt
+mem > %windir%\m2.txt
+mem > %windir%\m3.txt
+mem > %windir%\m4.txt
+mem > %windir%\m5.txt
+mem > %windir%\m6.txt
+mem > %windir%\m7.txt
+mem > %windir%\m8.txt
+mem > %windir%\m9.txt
+mem > %windir%\m10.txt
+del /f /q %windir%\m1.txt
+del /f /q %windir%\m2.txt
+del /f /q %windir%\m3.txt
+del /f /q %windir%\m4.txt
+del /f /q %windir%\m5.txt
+del /f /q %windir%\m6.txt
+del /f /q %windir%\m7.txt
+del /f /q %windir%\m8.txt
+del /f /q %windir%\m9.txt
+del /f /q %windir%\m10.txt
+del /f /q %report%
+exit

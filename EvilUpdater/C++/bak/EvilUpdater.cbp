@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="EvilUpdater" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="common\;console\;gui\;" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin\build\EvilUpdater" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\build\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="source\common\EvilUpdater.cpp">
+			<Option virtualFolder="common\" />
+		</Unit>
+		<Unit filename="source\common\types.h">
+			<Option virtualFolder="common\" />
+		</Unit>
+		<Unit filename="source\common\updater.cpp">
+			<Option virtualFolder="common\" />
+		</Unit>
+		<Unit filename="source\common\updater.h">
+			<Option virtualFolder="common\" />
+		</Unit>
+		<Unit filename="source\console\con_languages.cpp">
+			<Option virtualFolder="console\" />
+		</Unit>
+		<Unit filename="source\console\con_languages.h">
+			<Option virtualFolder="console\" />
+		</Unit>
+		<Unit filename="source\console\con_misc.cpp">
+			<Option virtualFolder="console\" />
+		</Unit>
+		<Unit filename="source\console\con_misc.h">
+			<Option virtualFolder="console\" />
+		</Unit>
+		<Unit filename="source\console\consolemain.cpp">
+			<Option virtualFolder="console\" />
+		</Unit>
+		<Unit filename="source\console\consolemain.h">
+			<Option virtualFolder="console\" />
+		</Unit>
+		<Unit filename="source\gui\gui.cpp">
+			<Option virtualFolder="gui\" />
+		</Unit>
+		<Unit filename="source\gui\gui.h">
+			<Option virtualFolder="gui\" />
+		</Unit>
+		<Unit filename="source\gui\gui_languages.cpp">
+			<Option virtualFolder="gui\" />
+		</Unit>
+		<Unit filename="source\gui\gui_languages.h">
+			<Option virtualFolder="gui\" />
+		</Unit>
+		<Unit filename="source\gui\gui_misc.cpp">
+			<Option virtualFolder="gui\" />
+		</Unit>
+		<Unit filename="source\gui\gui_misc.h">
+			<Option virtualFolder="gui\" />
+		</Unit>
+		<Unit filename="source\gui\guimain.cpp">
+			<Option virtualFolder="gui\" />
+		</Unit>
+		<Unit filename="source\gui\guimain.h">
+			<Option virtualFolder="gui\" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

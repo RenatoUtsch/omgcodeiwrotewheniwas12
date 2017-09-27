@@ -1,0 +1,3 @@
+------------------- E00547 -------------------------------------------------------------------------
+The user tried to execute a file that wasn't the inicializator: EvilVaccinator.exe.
+

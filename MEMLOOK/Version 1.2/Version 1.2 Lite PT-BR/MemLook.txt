@@ -1,0 +1,152 @@
+@echo off
+@echo.
+title MEMLOOK VERSAO 1.2 Lite PT-BR
+@echo.
+@echo Memlook Lite e um programa nao invasivo de escaneamento de memoria.
+@echo.
+@echo - Memlook Lite nao cria/modifica arquivos no registro.
+@echo.
+@echo - Memlook Lite nao cria arquivos/pastas permanentes.
+@echo.
+@echo Esse escaneamento nao deve demorar mais de alguns segundos para terminar.
+@echo.
+@echo Quando terminar, 1 arquivo de log deve abrir.
+@echo.
+@echo Poste o conteudo dos log no forum onde foi solicitado.
+@echo.
+@echo By LordEvil.
+@echo.
+date /t > c:\windows\mdate.txt
+time /t > c:\windows\mtime.txt
+mem /p > c:\windows\memlook1.txt
+mem /c > c:\windows\memlook2.txt
+mem /d > c:\windows\memlook3.txt
+copy "c:\windows\mdate.txt"+"c:\windows\mtime.txt"+"c:\windows\memlook1.txt"+"c:\windows\memlook2.txt"+"c:\windows\memlook3.txt" "C:\windows\memlook.txt"
+del /f /q c:\windows\mdate.txt
+del /f /q c:\windows\mtime.txt
+del /f /q c:\windows\memlook1.txt
+del /f /q c:\windows\memlook2.txt
+del /f /q c:\windows\memlook3.txt
+start notepad c:\windows\memlook.txt
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+@echo.
+del /f /q c:\windows\memlook.txt
+exit

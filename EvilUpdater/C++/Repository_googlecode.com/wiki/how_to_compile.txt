@@ -1,0 +1,74 @@
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+////                                                                                 ////
+////                                                                                 ////
+////                           @@@@@  @@    @@ @@@@@@ @@                             ////
+////                           @@     @@    @@   @@   @@                             ////
+////                           @@@@@   @@  @@    @@   @@                             ////
+////                           @@       @@@@     @@   @@                             ////
+////                           @@@@@     @@    @@@@@@ @@@@@@                         ////
+////                                                                                 ////
+////             @@    @@ @@@@@@  @@@@@     @@@@   @@@@@@@@ @@@@@ @@@@@@             ////
+////             @@    @@ @@   @@ @   @@   @@  @@     @@    @@    @@   @@            ////
+////             @@    @@ @@@@@@  @    @@ @@@@@@@@    @@    @@@@@ @@@@@@             ////
+////              @@  @@  @@      @   @@  @@    @@    @@    @@    @@  @@             ////
+////               @@@@   @@      @@@@@   @@    @@    @@    @@@@@ @@   @@            ////
+////                                                                                 ////
+////                                                                                 ////
+////                       ---------------------------------                         ////
+////                       |                               |                         ////
+////                       | -       How to Compile      - |                         ////
+////                       |                               |                         ////
+////                       ---------------------------------                         ////
+////                                                                                 ////
+////                                                                                 ////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+Well, on this file I will describe the method I use for editing the code and compiling
+itself. I recommend to make it this way, because it makes sure for you that you won't
+get any bug or difference with my compilations because of the compiler.
+
+
+* First, THE IDE<>
+
+  <?> I use Visual C++ 2010.
+
+  <!> To use Visual C++ 2010 (Express Edition works), only open EvilUpdater.sln file inside
+      trunk/EvilUpdater. If you use other IDE, you will have to create a new project for it, or
+      open each file separately... So I really suggest using VC++ 2010, for organization
+      and more intuitive and easy editing.
+
+* Second, THE COMPILER<>
+
+  <?> I use VC++ 2010 to compile.
+
+  <!> You can use MinGW if you solve the 'WinMain@16' problem (if you solve that, I
+      return to Code::Blocks + MinGW combination) and make a makefile.
+
+* Third, HOW TO COMPILE<>
+
+  <?> Only click in "Debug" > "Build Solution". Easy.
+
+
+Best Regards,
+
+
+LordEvil~*
+Creator of EvilUpdater
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+////                                                                                 ////
+////                                                                                 ////
+////                       ---------------------------------                         ////
+////                       |                               |                         ////
+////                       | -            END            - |                         ////
+////                       |                               |                         ////
+////                       ---------------------------------                         ////
+////                                                                                 ////
+////                                                                                 ////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////

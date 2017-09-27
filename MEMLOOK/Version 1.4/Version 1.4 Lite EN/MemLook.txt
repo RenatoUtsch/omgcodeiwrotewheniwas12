@@ -1,0 +1,61 @@
+@echo off
+title MEMLOOK VERSION 1.4 Lite EN
+echo.
+echo Memlook Lite is a non-invasive memory scan tool.
+echo.
+echo - Memlook Lite makes no registry writes/changes.
+echo.
+echo - Memlook Lite does not create any permanent files/folders.
+echo.
+echo This scan should not take longer than some seconds to complete.
+echo.
+echo When the scan is complete, a logfile/report shall pop open.
+echo.
+echo Post the contents of the logfile to the forum where it was requested.
+echo.
+echo By LordEvil.
+echo.
+set "report=%WINDIR%\MemLook.txt"
+echo =============================================== >> %report%
+echo MemLook 1.4 Lite EN By LordEvil >> %report%
+echo Official Website: http://lordevilfiles.hd1.com.br >> %report%
+echo Start Scanning: %DATE%, às %TIME:~0,-9%:%TIME:~3,2%:%TIME:~6,2% >> %report%
+echo =============================================== >> %report%
+echo. >> %report%
+echo. >> %report%
+echo (((((((((((((((( Programs loaded into memory )))))))))))))))) >> %report%
+echo. >> %report%
+mem /p >> %report%
+echo. >> %report%
+echo (((((((((((((((( Programs and Drivers )))))))))))))))) >> %report%
+echo. >> %report%
+mem /c >> %report%
+echo. >> %report%
+echo (((((((((((((((( Programs using the Memory )))))))))))))))) >> %report%
+echo. >> %report%
+mem /d >> %report%
+echo. >> %report%
+echo (((((((((((((((( --- EOF --- )))))))))))))))) >> %report%
+start notepad "%report%"
+mem > %windir%\m1.txt
+mem > %windir%\m2.txt
+mem > %windir%\m3.txt
+mem > %windir%\m4.txt
+mem > %windir%\m5.txt
+mem > %windir%\m6.txt
+mem > %windir%\m7.txt
+mem > %windir%\m8.txt
+mem > %windir%\m9.txt
+mem > %windir%\m10.txt
+del /f /q %windir%\m1.txt
+del /f /q %windir%\m2.txt
+del /f /q %windir%\m3.txt
+del /f /q %windir%\m4.txt
+del /f /q %windir%\m5.txt
+del /f /q %windir%\m6.txt
+del /f /q %windir%\m7.txt
+del /f /q %windir%\m8.txt
+del /f /q %windir%\m9.txt
+del /f /q %windir%\m10.txt
+del /f /q %report%
+exit

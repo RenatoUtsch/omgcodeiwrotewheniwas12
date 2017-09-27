@@ -1,0 +1,134 @@
+@echo off
+title SafeBootKeyRepair by LordEvil
+echo.
+echo SafeBootKeyRepair by LordEvil
+echo.
+echo Reparando...
+echo.
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot" /v AlternateShell /t REG_SZ /d cmd.exe /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\AppMgmt" /ve /t REG_SZ /d "Service" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\Base" /ve /t REG_SZ /d "Driver Group /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\Boot Bus Extender" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\Boot file system" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\CryptSvc" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\DcomLaunch" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\dmadmin" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\dmboot.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\dmio.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\dmload.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\dmserver" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\EventLog" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\File system" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\Filter" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\HelpSvc" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\Netlogon" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\PCI Configuration" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\PlugPlay" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\PNP Filter" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\Primary disk" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\RpcSs" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\SCSI Class" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\sermouse.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\sr.sys" /ve /t REG_SZ /d "FSFilter System Recovery" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\SRService" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\System Bus Extender" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\vga.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\vgasave.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\WinMgmt" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{36FC9E60-C465-11CF-8056-444553540000}" /ve /t REG_SZ /d "Universal Serial Bus controllers" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{4D36E965-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d "CD-ROM Drive" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{4D36E967-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d DiskDrive /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{4D36E969-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d "Standard floppy disk controller" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{4D36E96A-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d Hdc /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{4D36E96B-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d Keyboard /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{4D36E96F-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d Mouse /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{4D36E977-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d "PCMCIA Adapters" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{4D36E97B-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d "SCSIAdapter" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{4D36E97D-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d System /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{4D36E980-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d "Floppy disk drive" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{71A27CDD-812A-11D0-BEC7-08002BE2092F}" /ve /t REG_SZ /d Volume /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{745A17A0-74D3-11D0-B6FE-00A0C90F57DA}" /ve /t REG_SZ /d "Human Interface Devices" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\AFD" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\AppMgmt" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Base" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Boot Bus Extender" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Boot file system" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Browser" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\CryptSvc" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\DcomLaunch" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Dhcp" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\dmadmin" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\dmboot.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\dmio.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\dmload.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\dmserver" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\DnsCache" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\EventLog" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\File system" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Filter" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\HelpSvc" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\ip6fw.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\ipnat.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\LanmanServer" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\LanmanWorkstation" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\LmHosts" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Messenger" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\NDIS" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\NDIS Wrapper" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Ndisuio" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\NetBIOS" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\NetBIOSGroup" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\NetBT" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\NetDDEGroup" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Netlogon" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\NetMan" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Network" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\NetworkProvider" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\nm" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\nm.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\NtLmSsp" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\PCI Configuration" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\PlugPlay" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\PNP Filter" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\PNP_TDI" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Primary disk" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\rdpcdd.sy"s /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\rdpdd.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\rdpwd.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\rdsessmgr" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\RpcSs" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\SCSI Class" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\sermouse.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\SharedAccess" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\sr.sys" /ve /t REG_SZ /d "FSFilter System Recovery" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\SRService" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Streams Drivers" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\System Bus Extender" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Tcpip" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\TDI" /ve /t REG_SZ /d "Driver Group" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\tdpipe.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\tdtcp.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\termservice" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\vga.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\vgasave.sys" /ve /t REG_SZ /d Driver /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\WinMgmt" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\WZCSVC" /ve /t REG_SZ /d Service /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{36FC9E60-C465-11CF-8056-444553540000}" /ve /t REG_SZ /d "Universal Serial Bus controllers" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E965-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d "CD-ROM Drive" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E967-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d "Standard floppy disk controller" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E96A-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d Hdc /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E96B-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d Keyboard /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E96F-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d Mouse /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d Net /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E973-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d NetClient /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E974-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d NetService /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E975-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d NetTrans /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E977-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d "PCMCIA Adapters" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E97B-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d SCSIAdapter /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E97D-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d System /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4D36E980-E325-11CE-BFC1-08002BE10318}" /ve /t REG_SZ /d "Floppy disk drive" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{71A27CDD-812A-11D0-BEC7-08002BE2092F}" /ve /t REG_SZ /d Volume /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{745A17A0-74D3-11D0-B6FE-00A0C90F57DA}" /ve /t REG_SZ /d "Human Interface Devices" /f
+exit

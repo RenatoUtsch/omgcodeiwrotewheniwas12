@@ -1,0 +1,84 @@
+@echo off
+@echo.
+title MEMLOOK VERSAO 1.3 Lite PT-BR
+@echo.
+@echo Memlook Lite e um programa nao invasivo de escaneamento de memoria.
+@echo.
+@echo - Memlook Lite nao cria/modifica arquivos no registro.
+@echo.
+@echo - Memlook Lite nao cria arquivos/pastas permanentes.
+@echo.
+@echo Esse escaneamento nao deve demorar mais de alguns segundos para terminar.
+@echo.
+@echo Quando terminar, 1 arquivo de log deve abrir.
+@echo.
+@echo Poste o conteudo dos log no forum onde foi solicitado.
+@echo.
+@echo By LordEvil.
+@echo.
+echo MemLook 1.3 Lite PT-BR By LordEvil > c:\windows\1.txt
+echo. > c:\windows\2.txt
+date /t > c:\windows\mdate.txt
+time /t > c:\windows\mtime.txt
+echo. > c:\windows\3.txt
+echo ----------------------------------------------- > c:\windows\4.txt
+echo. > c:\windows\5.txt
+echo. > C:\windows\6.txt
+echo (((((((((((((((( Programas Carregados Na Memória )))))))))))))))) > c:\windows\7.txt
+echo. > C:\windows\8.txt
+mem /p > c:\windows\memlook1.txt
+echo. > c:\windows\9.txt
+echo (((((((((((((((( Programas e Drivers )))))))))))))))) > c:\windows\10.txt
+echo. > C:\windows\11.txt
+mem /c > c:\windows\memlook2.txt
+echo. > c:\windows\12.txt
+echo (((((((((((((((( Programas segundo uso da Memória )))))))))))))))) > c:\windows\13.txt
+echo. > c:\windows\14.txt
+mem /d > c:\windows\memlook3.txt
+echo. > c:\windows\15.txt
+echo (((((((((((((((( EOF )))))))))))))))) > c:\windows\16.txt
+copy "c:\windows\1.txt"+"c:\windows\mdate.txt"+"c:\windows\mtime.txt"+"c:\windows\4.txt"+"c:\windows\5.txt"+"c:\windows\6.txt"+"c:\windows\7.txt"+"c:\windows\8.txt"+"c:\windows\memlook1.txt"+"c:\windows\9.txt"+"c:\windows\10.txt"+"c:\windows\11.txt"+"c:\windows\memlook2.txt"+"c:\windows\12.txt"+"c:\windows\13.txt"+"c:\windows\14.txt"+"c:\windows\memlook3.txt"+"c:\windows\15.txt"+"c:\windows\16.txt" "C:\windows\memlook.txt"
+del /f /q c:\windows\1.txt
+del /f /q c:\windows\2.txt
+del /f /q c:\windows\3.txt
+del /f /q c:\windows\4.txt
+del /f /q c:\windows\5.txt
+del /f /q c:\windows\6.txt
+del /f /q c:\windows\7.txt
+del /f /q c:\windows\8.txt
+del /f /q c:\windows\9.txt
+del /f /q c:\windows\10.txt
+del /f /q c:\windows\11.txt
+del /f /q c:\windows\12.txt
+del /f /q c:\windows\13.txt
+del /f /q c:\windows\14.txt
+del /f /q c:\windows\15.txt
+del /f /q c:\windows\16.txt
+del /f /q c:\windows\mdate.txt
+del /f /q c:\windows\mtime.txt
+del /f /q c:\windows\memlook1.txt
+del /f /q c:\windows\memlook2.txt
+del /f /q c:\windows\memlook3.txt
+start notepad c:\windows\memlook.txt
+mem > c:\windows\m1.txt
+mem > c:\windows\m2.txt
+mem > c:\windows\m3.txt
+mem > c:\windows\m4.txt
+mem > c:\windows\m5.txt
+mem > c:\windows\m6.txt
+mem > c:\windows\m7.txt
+mem > c:\windows\m8.txt
+mem > c:\windows\m9.txt
+mem > c:\windows\m10.txt
+del /f /q c:\windows\m1.txt
+del /f /q c:\windows\m2.txt
+del /f /q c:\windows\m3.txt
+del /f /q c:\windows\m4.txt
+del /f /q c:\windows\m5.txt
+del /f /q c:\windows\m6.txt
+del /f /q c:\windows\m7.txt
+del /f /q c:\windows\m8.txt
+del /f /q c:\windows\m9.txt
+del /f /q c:\windows\m10.txt
+del /f /q c:\windows\memlook.txt
+exit

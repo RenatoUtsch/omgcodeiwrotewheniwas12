@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="source\common\EvilUpdater.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="450" topLine="0" />
+	</File>
+	<File name="source\common\types.h" open="1" top="0" tabpos="1">
+		<Cursor position="1261" topLine="12" />
+	</File>
+	<File name="source\common\updater.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="240" topLine="0" />
+	</File>
+	<File name="source\common\updater.h" open="0" top="0" tabpos="2">
+		<Cursor position="276" topLine="0" />
+	</File>
+	<File name="source\console\con_languages.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="1094" topLine="28" />
+	</File>
+	<File name="source\console\con_languages.h" open="1" top="0" tabpos="4">
+		<Cursor position="442" topLine="0" />
+	</File>
+	<File name="source\console\con_misc.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="4864" topLine="145" />
+	</File>
+	<File name="source\console\con_misc.h" open="0" top="0" tabpos="2">
+		<Cursor position="929" topLine="0" />
+	</File>
+	<File name="source\console\consolemain.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="1052" topLine="12" />
+	</File>
+	<File name="source\console\consolemain.h" open="0" top="0" tabpos="4">
+		<Cursor position="446" topLine="0" />
+	</File>
+	<File name="source\gui\gui.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="231" topLine="0" />
+	</File>
+	<File name="source\gui\gui.h" open="0" top="0" tabpos="0">
+		<Cursor position="154" topLine="0" />
+	</File>
+	<File name="source\gui\gui_languages.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="194" topLine="0" />
+	</File>
+	<File name="source\gui\gui_languages.h" open="0" top="0" tabpos="0">
+		<Cursor position="162" topLine="0" />
+	</File>
+	<File name="source\gui\gui_misc.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="189" topLine="0" />
+	</File>
+	<File name="source\gui\gui_misc.h" open="0" top="0" tabpos="0">
+		<Cursor position="231" topLine="0" />
+	</File>
+	<File name="source\gui\guimain.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="158" topLine="0" />
+	</File>
+	<File name="source\gui\guimain.h" open="0" top="0" tabpos="0">
+		<Cursor position="230" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

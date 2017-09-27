@@ -1,0 +1,39 @@
+@echo off
+@echo.
+title DESINSTALADOR DO MEMLOOK
+@echo.
+goto uninstall
+:uninstall
+@echo VOCE REALMENTE QUER DESINSTALAR O MEMLOOK?
+@echo.
+@echo Sim = 1
+@echo Nao = 2
+@echo.
+@echo.
+set /p opcao=Informe sua opcao 
+if /i "%opcao%"=="1" goto 1
+if /i "%opcao%"=="2" goto 2
+goto erro
+:2
+exit
+:erro
+@echo.
+@echo.
+@echo Opcao Invalida
+@echo.
+@echo.
+goto uninstall
+:1
+@echo.
+@echo DESINSTALANDO O MEMLOOK.... ESPERE POR FAVOR...
+@echo.
+rd /s /q "c:\MEMLOOK"
+Del /q /f /s "%userprofile%\Desktop\MemLook.bat"
+@echo.
+@echo MEMLOOK DESINSTALADO COM SUCESSO.
+@echo.
+@echo.
+pause
+@echo.
+del /q c:\WINDOWS\system32\memlookuninstaller.bat
+exit

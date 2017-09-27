@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Tips for your Online Store</title>
+<meta name="description" content="Tips for Building an Online Store. How to avoid pitfalls, win sales, and gain customer loyaltee." />
+<meta name="keywords" content="ecommerce hosting, shopping cart, credit card processing, ecommerce advice" />
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="rating" content="General" />
+<meta name="robots" content="all" />
+<base href="http://www.yoursite.com" />
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="/yoursitestyle.css" />
+<meta name="google-site-verification" content="2l2ziUUrR1krpfQsribrzrY0FREAJ-C26qth0Fa1BZc" />
+<META name="y_key" content="b7b9dd81e75719c0" />
+</head>
+<body>
+
+<div id="content2">
+<img border="0" src="/yoursitelogo.gif" width="310" height="68" alt="Navigating Prosperity">
+
+
+<h1>Tips for building an Online Store</h1>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="800">
+<tr>
+<td>
+
+Provide informative content on the web, very competitive pricing, and exceptional service. 
+Dazzel your customers with exciting presentation, but back it up with information they can use and prices they can depend on to be competitive.
+<p>
+Make your products easy to find on search engines and use search engine advertising effectively. Ask yourself, "how would I search for this product online?". Build the product label, descriptions, and purchase your advertising accordingly. 
+<p>
+Keep the shopping experience simple. Your efforts and advertising dollar are wasted if the customer finds the product but has to give up their life story just to find out the final cost, including shipping and taxes. All you need is a zip code, so that is all you should ask for. 
+One of the most frequently asked questions from business is "why do my shoppers abandon my cart?". Simple, when a shoppers wants to know the complete cost and the site blocks them from getting that answer they move on. Give your customers what they want.
+
+<p>
+The item description page should have a large visible button to add the item to the cart. Don't have a lot of unnecessary information that they don't need and don't hide the add to cart button. Present the product image, the description and the button. This is not the place to put a forum link or distract someone from the focus of buying the product. 
+<p>
+Customers will not navigate through page after page of forums to find a price. Go look at Amazon, they put a search bar at the top, hot items, and a category list. They keep it simple, we suggest the same.
+<p>
+If you own a brick and mortar business, continue your brand online with your brand at your store. Have a graphic artist put a little time into your main homepage image so that people recognize your store as your store. 
+<p>
+Most importantly, sign up and use our online store builder! Check out the online demo by <a href="http://www.yoursiteshoppingcart.com/" target="_blank">clicking here!</a> For $35.00 a month you get a turnkey online store and the best customer service in the industry. eCommerce hosting, email, ssl all included.<p>
+To start today, search for a domain below...
+		<div id="domainsearch">
+
+		<h2>Find a domain...</h2>
+		<FORM action="http://www.yoursite.com/domainRegistration/Check.Asp" method="Post">
+		<input type="hidden" name="action" value="check">www.
+        <input type="text" name="SLD" size="20">
+
+        <select name="TLD" size="1">
+
+            <OPTION VALUE="com">.com</option>
+	    <OPTION VALUE="net">.net</option>
+            <OPTION VALUE="org">.org</option>
+            <OPTION VALUE="biz">.biz</option>
+            <OPTION VALUE="info">.info</option> 
+	    <OPTION VALUE="name">.name</option>  
+	    <OPTION VALUE="mobi">.mobi</option> 
+	    <OPTION VALUE="pro">.pro</option> 
+	    <OPTION VALUE="tel">.tel</option> 
+
+ 		</select>
+
+        <input class="submit" type="submit" value="SEARCH">
+		</FORM>
+		</div>
+<!--- End Domain Search --->
+&copy;1995-2010 yoursite.com Phone: 1-(888)-649-2881 
+	</div>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+</HTML>

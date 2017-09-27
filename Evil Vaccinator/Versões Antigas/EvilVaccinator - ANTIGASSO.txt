@@ -1,0 +1,887 @@
+@echo off
+color 1F
+title EvilVaccinator By LordEvil
+echo EvilVaccinator By LordEvil
+echo BETA Version
+echo.
+echo.
+echo.
+goto run
+:run
+@echo O que deseja fazer?
+@echo.
+echo Digite 1 para sair.
+echo Digite 2 para executar a ferramenta.
+echo Digite 3 para desinstalar a ferramenta.
+echo Digite 4 para remover a vacina.
+@echo.
+set /p opcao=Informe sua opcao 
+if /i "%opcao%"=="1" goto run1
+if /i "%opcao%"=="2" goto run2
+if /i "%opcao%"=="3" goto run3
+if /i "%opcao%"=="4" goto run4
+goto runerro
+:runerro
+echo.
+echo.
+echo Opcao Invalida
+echo.
+echo.
+goto run
+:run1
+echo.
+echo Fechando o EvilVaccinator...
+exit
+:run2
+echo.
+echo Executando o EvilVaccinator...
+if exist c:\windows\system32\evilv.evilsys goto scan
+goto autoscan1
+:run3
+rd /s /q "c:\Evil Vaccinator"
+del /f /q EvilVaccinator.exe
+:run4
+echo.
+cls
+color 1F
+echo Preparando para remover Vacina....
+echo ========================= > c:\windows\e1.txt
+echo EvilVaccinator By LordEvil - BETA Version > c:\windows\e2.txt
+date /t > c:\windows\e3.txt
+time /t > c:\windows\e4.txt
+echo ========================= > c:\windows\e5.txt
+echo (((((((((((((((((((( Remoção da Vacina )))))))))))))))))))) > c:\windows\e6.txt
+echo. > c:\windows\e7.txt
+if exist c:\windows\system32\evilv.evilsys goto rem1
+goto rem2
+:rem2
+echo.
+echo A vacina não pode ser removida pois a ferramenta ainda não foi executada!
+echo Vacina não pode ser removida pois a ferramenta não foi rodada. > c:\windows\e8.txt
+goto log
+:rem1
+echo Removendo vacina...
+attrib -r -s -h c:\autorun.inf /s /d
+attrib -r -s -h c:\windows\autorun.inf /s /d
+attrib -r -s -h c:\windows\system32\autorun.inf /s /d
+attrib -r -s -h c:\windows\system\autorun.inf /s /d
+attrib -r -s -h d:\autorun.inf /s /d
+attrib -r -s -h c:\windows\system32\XP-2D98707A.EXE /s /d
+attrib -r -s -h c:\windows\system32\com.run /s /d
+attrib -r -s -h c:\windows\system32\dp1.fne /s /d
+attrib -r -s -h c:\windows\system32\eAPI.fne /s /d
+attrib -r -s -h c:\windows\system32\internet.fne /s /d
+attrib -r -s -h c:\windows\system32\krnln.fnr /s /d
+attrib -r -s -h c:\windows\system32\og.edt /s /d
+attrib -r -s -h c:\windows\system32\og.dll /s /d
+attrib -r -s -h c:\windows\system32\RegEx.fnr /s /d
+attrib -r -s -h c:\windows\system32\shell.fne /s /d
+attrib -r -s -h c:\windows\system32\spec.fne /s /d
+attrib -r -s -h c:\windows\system32\ul.dll /s /d
+del /f /q c:\autorun.inf
+rd /s /q c:\autorun.inf
+del /f /q c:\windows\autorun.inf
+rd /s /q c:\windows\autorun.inf
+del /f /q c:\windows\system32\autorun.inf
+rd /s /q c:\windows\system32\autorun.inf
+del /f /q c:\windows\system32\autorun.inf
+rd /s /q c:\windows\system32\autorun.inf
+del /f /q c:\windows\system\autorun.inf
+rd /s /q c:\windows\system\autorun.inf
+del /f /q d:\autorun.inf
+rd /s /q d:\autorun.inf
+del /f /q c:\windows\system32\XP-2D98707A.EXE
+rd /s /q c:\windows\system32\XP-2D98707A.EXE
+del /f /q c:\windows\system32\com.run
+rd /s /q c:\windows\system32\com.run
+del /f /q c:\windows\system32\dp1.fne
+rd /s /q c:\windows\system32\dp1.fne
+del /f /q c:\windows\system32\eAPI.fne
+rd /s /q c:\windows\system32\eAPI.fne
+del /f /q c:\windows\system32\internet.fne
+rd /s /q c:\windows\system32\internet.fne
+del /f /q c:\windows\system32\krnln.fnr
+rd /s /q c:\windows\system32\krnln.fnr
+del /f /q c:\windows\system32\og.edt
+rd /s /q c:\windows\system32\og.edt
+del /f /q c:\windows\system32\RegEx.fnr
+rd /s /q c:\windows\system32\RegEx.fnr
+del /f /q c:\windows\system32\shell.fne
+rd /s /q c:\windows\system32\shell.fne
+del /f /q c:\windows\system32\spec.fne
+rd /s /q c:\windows\system32\spec.fne
+del /f /q c:\windows\system32\ul.dll
+rd /s /q c:\windows\system32\ul.dll
+echo.
+echo Vacina removida com Sucesso! > c:\windows\e8.txt
+goto log
+:autoscan1
+echo. > c:\windows\system32\evilv.evilsys
+md "c:\Evil Vaccinator"
+md "c:\Evil Vaccinator\Scans"
+md "c:\Evil Vaccinator\Quarentena"
+md "c:\Evil Vaccinator\Quarentena\D"
+md "c:\Evil Vaccinator\Quarentena\C"
+md "c:\Evil Vaccinator\Quarentena\C\Windows"
+md "c:\Evil Vaccinator\Quarentena\C\Windows\System"
+md "c:\Evil Vaccinator\Quarentena\C\Windows\System32"
+del /f /q "c:\Evil Vaccinator\Scans\EvilVaccinator20.txt"
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator19.txt" EvilVaccinator20.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator18.txt" EvilVaccinator19.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator17.txt" EvilVaccinator18.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator16.txt" EvilVaccinator17.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator15.txt" EvilVaccinator16.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator14.txt" EvilVaccinator15.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator13.txt" EvilVaccinator14.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator12.txt" EvilVaccinator13.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator11.txt" EvilVaccinator12.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator10.txt" EvilVaccinator11.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator9.txt" EvilVaccinator10.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator8.txt" EvilVaccinator9.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator7.txt" EvilVaccinator8.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator6.txt" EvilVaccinator7.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator5.txt" EvilVaccinator6.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator4.txt" EvilVaccinator5.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator3.txt" EvilVaccinator4.txt
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator2.txt" EvilVaccinator3.txt
+move c:\EvilVaccinator.txt "c:\Evil Vaccinator\Scans\EvilVaccinator.txt"
+rename "c:\Evil Vaccinator\Scans\EvilVaccinator.txt" EvilVaccinator2.txt
+goto scan
+:scan
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo.
+echo ========================= > c:\windows\e1.txt
+echo EvilVaccinator By LordEvil - BETA Version > c:\windows\e2.txt
+date /t > c:\windows\e3.txt
+time /t > c:\windows\e4.txt
+echo ========================= > c:\windows\e5.txt
+echo (((((((((((((((((((( USB )))))))))))))))))))) > c:\windows\e6.txt
+echo. > c:\windows\e7.txt
+echo.
+goto p1
+:p1
+if exist "c:\autorun.inf" goto e1
+goto n1
+:e1
+if exist c:\autorun.inf\con.evilv goto p2
+attrib -r -s -h c:\autorun.inf /s /d
+rename c:\autorun.inf\*.* *.*.vir
+rename c:\autorun.inf autorun.inf.vir
+move /y "c:\autorun.inf.vir" "c:\Evil Vaccinator\Quarentena\C\autorun.inf.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+md C:\autorun.inf
+echo. > c:\autorun.inf\con.evilv
+attrib +r +s +h c:\autorun.inf /s /d
+echo --Q--V-- c:\autorun.inf > c:\windows\e8.txt
+goto p2
+:n1
+md C:\autorun.inf
+echo. > c:\autorun.inf\con.evilv
+attrib +r +s +h c:\autorun.inf /s /d
+goto p2
+:p2
+if exist "c:\windows\autorun.inf" goto e2
+goto n2
+:e2
+if exist c:\windows\autorun.inf\con.evilv goto p3
+attrib -r -s -h c:\windows\autorun.inf /s /d
+rename c:\windows\autorun.inf\*.* *.*.vir
+rename c:\windows\autorun.inf autorun.inf.vir
+move "c:\windows\autorun.inf.vir" "c:\Evil Vaccinator\Quarentena\C\Windows\autorun.inf.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo --Q--V-- c:\windows\autorun.inf > c:\windows\e9.txt
+md c:\windows\autorun.inf
+echo. > c:\windows\autorun.inf\con.evilv
+attrib +r +s +h c:\windows\autorun.inf /s /d
+goto p3
+:n2
+md c:\windows\autorun.inf
+echo. > c:\windows\autorun.inf\con.evilv
+attrib +r +s +h c:\windows\autorun.inf /s /d
+goto p3
+:p3
+if exist "c:\windows\system\autorun.inf" goto e3
+goto n3
+:e3
+if exist c:\windows\system\autorun.inf\con.evilv goto p4
+attrib -r -s -h c:\windows\system\autorun.inf /s /d
+rename c:\windows\system\autorun.inf\*.* *.*.vir
+rename c:\windows\system\autorun.inf autorun.inf.vir
+move /y "c:\windows\system\autorun.inf.vir" "c:\Evil Vaccinator\Quarentena\C\Windows\System\autorun.inf.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo --Q--V-- c:\windows\system\autorun.inf > c:\windows\e10.txt
+md c:\windows\system\autorun.inf
+echo. > c:\windows\system\autorun.inf\con.evilv
+attrib +r +s +h c:\windows\system\autorun.inf /s /d
+goto p4
+:n3
+md c:\windows\system\autorun.inf
+echo. > c:\windows\system\autorun.inf\con.evilv
+attrib +r +s +h c:\windows\system\autorun.inf /s /d
+goto p4
+:p4
+if exist "c:\windows\system32\autorun.inf" goto e4
+goto n4
+:e4
+if exist c:\windows\system32\autorun.inf\con.evilv goto p5
+attrib -r -s -h c:\windows\system32\autorun.inf /s /d
+rename c:\windows\system32\autorun.inf\*.* *.*.vir
+rename c:\windows\system32\autorun.inf autorun.inf.vir
+move /y "c:\windows\system32\autorun.inf.vir" "c:\Evil Vaccinator\Quarentena\C\Windows\System32\autorun.inf.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo --Q--V-- c:\windows\system32\autorun.inf > c:\windows\e11.txt
+md c:\windows\system32\autorun.inf
+echo. > c:\windows\system32\autorun.inf\con.evilv
+attrib +r +s +h c:\windows\system32\autorun.inf /s /d
+goto p5
+:n4
+md c:\windows\system32\autorun.inf
+echo. > c:\windows\system32\autorun.inf\con.evilv
+attrib +r +s +h c:\windows\system32\autorun.inf /s /d
+goto p5
+:p5
+if exist "d:\" goto e5
+goto n5
+:e5
+if exist "d:\autorun.inf" goto e55
+goto n55
+:e55
+if exist d:\autorun.inf\con.evilv goto p6
+attrib -r -s -h d:\autorun.inf /s /d
+rename d:\autorun.inf\*.* *.*.vir
+rename d:\autorun.inf\autorun.inf.vir
+move /y "d:\autorun.inf.vir" "c:\Evil Vaccinator\Quarentena\D\autorun.inf.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo --Q--V-- D:\autorun.inf > c:\windows\e12.txt
+md d:\autorun.inf
+echo. > d:\autorun.inf\con.evilv
+attrib +r +s +h d:\autorun.inf /s /d
+goto p6
+:n55
+md d:\autorun.inf
+echo. > d:\autorun.inf\con.evilv
+attrib +r +s +h d:\autorun.inf /s /d
+goto p6
+:n5
+goto p6
+:p6
+goto usb
+:usb
+echo Completada Etapa_1
+echo Computador Vacinado contra malwares de USB! > c:\windows\usb1.txt
+echo Entradas maliciosas vacinadas: 10 > c:\windows\usb2.txt
+echo. > c:\windows\usb3.txt
+goto c
+:c
+echo (((((((((((((((((((( Discos Locais )))))))))))))))))))) > c:\windows\e13.txt
+echo.
+goto px1
+:px1
+if exist "c:\windows\system32\XP-2D98707A.EXE" goto ex1
+goto nx1
+:ex1
+if exist "c:\windows\system32\XP-2D98707A.EXE\con.evilv" goto px2
+attrib -r -s -h c:\windows\system32\XP-2D98707A.EXE
+rename c:\windows\system32\XP-2D98707A.EXE XP-2D98707A.EXE.vir
+md "c:\windows\system32\XP-2D98707A.EXE"
+echo. > c:\windows\system32\XP-2D98707A.EXE\con.evilv
+attrib +r +s +h c:\windows\system32\XP-2D98707A.EXE /s /d
+move /y "c:\windows\system32\XP-2D98707A.EXE.vir" "c:\Evil Vaccinator\Quarentena\C\windows\system32\XP-2D98707A.EXE.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo --Q--V-- c:\windows\system32\XP-2D98707A.EXE > c:\windows\ex1.txt
+goto px2
+:nx1
+md "c:\windows\system32\XP-2D98707A.EXE"
+echo. > c:\windows\system32\XP-2D98707A.EXE\con.evilv
+attrib +r +s +h c:\windows\system32\XP-2D98707A.EXE /s /d
+goto px2
+:px2
+if exist "c:\windows\system32\com.run" goto ex2
+goto nx2
+:ex2
+if exist "c:\windows\system32\com.run" goto px3
+attrib -r -s -h c:\windows\system32\com.run
+rename c:\windows\system32\com.run com.run.vir
+md c:\windows\system32\com.run
+echo. > c:\windows\system32\com.run\con.evilv
+attrib  +r +s +h c:\windows\system32\com.run /s /d
+move /y "c:\windows\system32\com.run.vir" "c:\Evil Vaccinator\Quarentena\C\windows\system32\com.run.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo --Q--V-- c:\windows\system32\com.run > c:\windows\ex2.txt
+goto px3
+:nx2
+md c:\windows\system32\com.run
+echo. > c:\windows\system32\com.run\con.evilv
+attrib  +r +s +h c:\windows\system32\com.run /s /d
+goto px3
+:px3
+if exist "c:\windows\system32\dp1.fne" goto ex3
+goto nx3
+:ex3
+if exist "c:\windows\system32\dp1.fne" goto px4
+attrib -r -s -h c:\windows\system32\dp1.fne
+rename c:\windows\system32\dp1.fne dp1.fne.vir
+md c:\windows\system32\dp1.fne
+echo. > c:\windows\system32\dp1.fne\con.evilv
+attrib  +r +s +h c:\windows\system32\dp1.fne /s /d
+move /y c:\windows\system32\dp1.fne.vir "c:\Evil Vaccinator\Quarentena\c\windows\system32\dp1.fne.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo --Q--V-- c:\windows\system32\dp1.fne > c:\windows\ex3.txt
+goto px4
+:nx3
+md c:\windows\system32\dp1.fne
+echo. > c:\windows\system32\dp1.fne\con.evilv
+attrib  +r +s +h c:\windows\system32\dp1.fne /s /d
+goto px4
+:px4
+if exist "c:\windows\system32\eAPI.fne" goto ex4
+goto nx4
+:ex4
+if exist "c:\windows\system32\eAPI.fne\con.evilv" goto px5
+attrib -r -s -h c:\windows\system32\eAPI.fne
+rename c:\windows\system32\eAPI.fne eAPI.fne.vir
+md c:\windows\system32\eAPI.fne
+echo. > c:\windows\system32\eAPI.fne\con.evilv
+attrib  +r +s +h c:\windows\system32\eAPI.fne /s /d
+move /y "c:\windows\system32\eAPI.fne.vir" "c:\Evil Vaccinator\Quarentena\c\windows\system32\eAPI.fne.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo --Q--V-- c:\windows\system32\eAPI.fne > c:\windows\ex4.txt
+goto px5
+:nx4
+md c:\windows\system32\eAPI.fne
+echo. > c:\windows\system32\eAPI.fne\con.evilv
+attrib  +r +s +h c:\windows\system32\eAPI.fne /s /d
+goto px5
+:px5
+if exist "c:\windows\system32\internet.fne" goto ex5
+goto nx5
+:ex5
+if exist "c:\windows\system32\internet.fne\con.evilv" goto px6
+attrib -r -s -h c:\windows\system32\internet.fne
+rename c:\windows\system32\internet.fne internet.fne.vir
+md c:\windows\system32\internet.fne
+echo. > c:\windows\system32\internet.fne\con.evilv
+attrib  +r +s +h c:\windows\system32\internet.fne /s /d
+move /y "c:\windows\system32\internet.fne.vir" "c:\Evil Vaccinator\Quarentena\c\windows\system32\internet.fne.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo --Q--V-- c:\windows\system32\internet.fne > c:\windows\ex5.txt
+goto px6
+:nx5
+md c:\windows\system32\internet.fne
+echo. > c:\windows\system32\internet.fne\con.evilv
+attrib  +r +s +h c:\windows\system32\internet.fne /s /d
+goto px6
+:px6
+if exist "c:\windows\system32\krnln.fnr" goto ex6
+goto nx6
+:ex6
+if exist "c:\windows\system32\krnln.fnr\con.evilv" goto px7
+attrib -r -s -h c:\windows\system32\krnln.fnr
+rename c:\windows\system32\krnln.fnr krnln.fnr.vir
+md c:\windows\system32\krnln.fnr
+echo. > c:\windows\system32\krnln.fnr\con.evilv
+attrib  +r +s +h c:\windows\system32\krnln.fnr /s /d
+move /y "c:\windows\system32\krnln.fnr.vir" "c:\Evil Vaccinator\Quarentena\c\windows\system32\krnln.fnr.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo --Q--V-- c:\windows\system32\krnln.fnr > c:\windows\ex6.txt
+goto px7
+:nx6
+md c:\windows\system32\krnln.fnr
+echo. > c:\windows\system32\krnln.fnr\con.evilv
+attrib  +r +s +h c:\windows\system32\krnln.fnr /s /d
+goto px7
+:px7
+if exist "c:\windows\system32\og.dll" goto ex7
+goto nx7
+:ex7
+if exist "c:\windows\system32\og.dll\con.evilv" goto px8
+attrib -r -s -h c:\windows\system32\og.dll
+rename c:\windows\system32\og.dll og.dll.vir
+md c:\windows\system32\og.dll
+echo. > c:\windows\system32\og.dll\con.evilv
+attrib  +r +s +h c:\windows\system32\og.dll /s /d
+move /y "c:\windows\system32\og.dll.vir" "c:\Evil Vaccinator\Quarentena\c\windows\system32\og.dll.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo --Q--V-- c:\windows\system32\og.dll > c:\windows\ex7.txt
+goto px8
+:nx7
+md c:\windows\system32\og.dll
+echo. > c:\windows\system32\og.dll\con.evilv
+attrib  +r +s +h c:\windows\system32\og.dll /s /d
+goto px8
+:px8
+if exist "c:\windows\system32\og.edt" goto ex8
+goto nx8
+:ex8
+if exist "c:\windows\system32\og.edt\con.evilv" goto px9
+attrib -r -s -h c:\windows\system32\og.edt
+rename c:\windows\system32\og.edt og.edt.vir
+md c:\windows\system32\og.edt
+echo. > c:\windows\system32\og.edt\con.evilv
+attrib  +r +s +h c:\windows\system32\og.edt /s /d
+move /y "c:\windows\system32\og.edt.vir" "c:\Evil Vaccinator\Quarentena\c\windows\system32\og.edt.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo --Q--V-- c:\windows\system32\og.edt > c:\windows\ex8.txt
+goto px9
+:nx8
+md c:\windows\system32\og.edt
+echo. > c:\windows\system32\og.edt\con.evilv
+attrib  +r +s +h c:\windows\system32\og.edt /s /d
+goto px9
+:px9
+if exist "c:\windows\system32\RegEx.fnr" goto ex9
+goto nx9
+:ex9
+if exist "c:\windows\system32\RegEx.fnr\con.evilv" goto px10
+attrib -r -s -h c:\windows\system32\RegEx.fnr
+rename c:\windows\system32\RegEx.fnr RegEx.fnr.vir
+md c:\windows\system32\RegEx.fnr
+echo. > c:\windows\system32\RegEx.fnr\con.evilv
+attrib  +r +s +h c:\windows\system32\RegEx.fnr /s /d
+move /y "c:\windows\system32\RegEx.fnr.vir" "c:\Evil Vaccinator\Quarentena\c\windows\system32\RegEx.fnr.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo --Q--V-- c:\windows\system32\RegEx.fnr > c:\windows\ex9.txt
+goto px10
+:nx9
+md c:\windows\system32\RegEx.fnr
+echo. > c:\windows\system32\RegEx.fnr\con.evilv
+attrib  +r +s +h c:\windows\system32\RegEx.fnr /s /d
+goto px10
+:px10
+if exist "c:\windows\system32\shell.fne" goto ex10
+goto nx10
+:ex10
+if exist "c:\windows\system32\shell.fne\con.evilv" goto px11
+attrib -r -s -h c:\windows\system32\shell.fne
+rename c:\windows\system32\shell.fne shell.fne.vir
+md c:\windows\system32\shell.fne
+echo. > c:\windows\system32\shell.fne\con.evilv
+attrib  +r +s +h c:\windows\system32\shell.fne /s /d
+move /y "c:\windows\system32\shell.fne.vir" "c:\Evil Vaccinator\Quarentena\c\windows\system32\shell.fne.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo --Q--V-- c:\windows\system32\shell.fne > c:\windows\ex10.txt
+goto px11
+:nx10
+md c:\windows\system32\shell.fne
+echo. > c:\windows\system32\shell.fne\con.evilv
+attrib  +r +s +h c:\windows\system32\shell.fne /s /d
+goto px11
+:px11
+if exist "c:\windows\system32\spec.fne" goto ex11
+goto nx11
+:ex11
+if exist "c:\windows\system32\spec.fne\con.evilv" goto px12
+attrib -r -s -h c:\windows\system32\spec.fne
+rename c:\windows\system32\spec.fne spec.fne.vir
+md c:\windows\system32\spec.fne
+echo. > c:\windows\system32\spec.fne\con.evilv
+attrib  +r +s +h c:\windows\system32\spec.fne /s /d
+move /y "c:\windows\system32\spec.fne.vir" "c:\Evil Vaccinator\Quarentena\c\windows\system32\spec.fne.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo --Q--V-- c:\windows\system32\spec.fne > c:\windows\ex11.txt
+goto px12
+:nx11
+md c:\windows\system32\spec.fne
+echo. > c:\windows\system32\spec.fne\con.evilv
+attrib  +r +s +h c:\windows\system32\spec.fne /s /d
+goto px12
+:px12
+if exist "c:\windows\system32\ul.dll" goto ex12
+goto nx12
+:ex12
+if exist "c:\windows\system32\ul.dll\con.evilv" goto px13
+attrib -r -s -h c:\windows\system32\ul.dll
+rename c:\windows\system32\ul.dll ul.dll.vir
+md c:\windows\system32\ul.dll
+echo. > c:\windows\system32\ul.dll\con.evilv
+attrib  +r +s +h c:\windows\system32\ul.dll /s /d
+move /y "c:\windows\system32\ul.dll.vir" "c:\Evil Vaccinator\Quarentena\c\windows\system32\ul.dll.vir"
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo --Q--V-- c:\windows\system32\spec.fne > c:\windows\ex12.txt
+goto px13
+:nx12
+md c:\windows\system32\ul.dll
+echo. > c:\windows\system32\ul.dll\con.evilv
+attrib  +r +s +h c:\windows\system32\ul.dll /s /d
+goto px13
+:px13
+echo Completada Etapa_2
+echo Computador Vacinado contra malwares nos Discos Locais! > c:\windows\ex13.txt
+echo Entradas maliciosas vacinadas: 12 > c:\windows\ex14.txt
+echo.
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo Completada Etapa_2
+goto ss
+:ss
+echo (((((((((((((((((((( Scans Suplementares )))))))))))))))))))) > c:\windows\scansu.txt
+echo.
+echo ==================== Scan provided by ((( MemLook by LordEvil ))) ==================== > c:\windows\scansu2.txt
+echo MemLook 1.3 Lite PT-BR By LordEvil > c:\windows\mem1.txt
+echo -------------------- Programas Carregados Na Memória -------------------- > c:\windows\mem2.txt
+mem /p > c:\windows\mem3.txt
+echo -------------------- Programas e Drivers -------------------- > c:\windows\mem4.txt
+mem /c > c:\windows\mem5.txt
+echo -------------------- Programas segundo uso da Memória -------------------- > c:\windows\mem6.txt
+mem /d > c:\windows\mem7.txt
+echo -------------------- EOF -------------------- > c:\windows\mem8.txt
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo Completada Etapa_2
+echo Completada Etapa_3
+echo ==================== Scan provided by ((( TaskMgrKeyRepair by LordEvil ))) ==================== > c:\windows\scansu3.txt
+echo TaskMgrKeyRepair 1.0 PT-BR By LordEvil > c:\windows\taskmgr1.txt
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 0 /f
+echo TaskMgr Reparado! > C:\windows\taskmgr2.txt
+echo -------------------- EOF -------------------- > c:\windows\taskmgr3.txt
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo Completada Etapa_2
+echo Completada Etapa_3
+echo Completada Etapa_3A
+echo ==================== Scan provided by ((( SafeBootKeyRepair by LordEvil ))) ==================== > c:\windows\scansu4.txt
+echo SafeBootKeyRepair 1.0 PT-BR By LordEvil > c:\windows\safeboot1.txt
+echo SafeBoot Reparado! > C:\windows\safeboot2.txt
+echo -------------------- EOF -------------------- > c:\windows\safeboot3.txt
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo Completada Etapa_2
+echo Completada Etapa_3
+echo Completada Etapa_3A
+echo Completada Etapa_3B
+echo ==================== Scan provided by ((( Evil Vaccinator - Scans ))) ==================== > c:\windows\scansu5.txt
+echo.
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator2.txt" goto scanevil1
+goto scanevilp2
+:scanevil1
+echo Log EvilVaccinator2.txt existe! > c:\windows\scan1.txt
+goto scanevilp2
+:scanevilp2
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator3.txt" goto scanevil2
+goto scanevilp3
+:scanevil2
+echo Log EvilVaccinator3.txt existe! > c:\windows\scan2.txt
+goto scanevilp3
+:scanevilp3
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator4.txt" goto scanevil3
+goto scanevilp4
+:scanevil3
+echo Log EvilVaccinator4.txt existe! > c:\windows\scan3.txt
+goto scanevilp4
+:scanevilp4
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator5.txt" goto scanevil4
+goto scanevilp5
+:scanevil4
+echo Log EvilVaccinator5.txt existe! > c:\windows\scan4.txt
+goto scanevilp5
+:scanevilp5
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator6.txt" goto scanevil5
+goto scanevilp6
+:scanevil5
+echo Log EvilVaccinator6.txt existe! > c:\windows\scan5.txt
+goto scanevilp6
+:scanevilp6
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator7.txt" goto scanevil6
+goto scanevilp7
+:scanevil6
+echo Log EvilVaccinator7.txt existe! > c:\windows\scan6.txt
+goto scanevilp7
+:scanevilp7
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator8.txt" goto scanevil7
+goto scanevilp8
+:scanevil7
+echo Log EvilVaccinator8.txt existe! > c:\windows\scan7.txt
+goto scanevilp8
+:scanevilp8
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator9.txt" goto scanevil8
+goto scanevilp9
+:scanevil8
+echo Log EvilVaccinator9.txt existe! > c:\windows\scan8.txt
+goto scanevilp9
+:scanevilp9
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator10.txt" goto scanevil9
+goto scanevilp10
+:scanevil9
+echo Log EvilVaccinator10.txt existe! > c:\windows\scan9.txt
+goto scanevilp10
+:scanevilp10
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator11.txt" goto scanevil10
+goto scanevilp11
+:scanevil10
+echo Log EvilVaccinator11.txt existe! > c:\windows\scan10.txt
+goto scanevilp11
+:scanevilp11
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator12.txt" goto scanevil11
+goto scanevilp12
+:scanevil11
+echo Log EvilVaccinator12.txt existe! > c:\windows\scan11.txt
+goto scanevilp12
+:scanevilp12
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator13.txt" goto scanevil12
+goto scanevilp13
+:scanevil12
+echo Log EvilVaccinator13.txt existe! > c:\windows\scan12.txt
+goto scanevilp13
+:scanevilp13
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator14.txt" goto scanevil13
+goto scanevilp14
+:scanevil13
+echo Log EvilVaccinator14.txt existe! > c:\windows\scan13.txt
+goto scanevilp14
+:scanevilp14
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator15.txt" goto scanevil14
+goto scanevilp15
+:scanevil14
+echo Log EvilVaccinator15.txt existe! > c:\windows\scan14.txt
+goto scanevilp15
+:scanevilp15
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator16.txt" goto scanevil15
+goto scanevilp16
+:scanevil15
+echo Log EvilVaccinator16.txt existe! > c:\windows\scan15.txt
+goto scanevilp16
+:scanevilp16
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator17.txt" goto scanevil16
+goto scanevilp17
+:scanevil16
+echo Log EvilVaccinator17.txt existe! > c:\windows\scan16.txt
+goto scanevilp17
+:scanevilp17
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator18.txt" goto scanevil17
+goto scanevilp18
+:scanevil17
+echo Log EvilVaccinator18.txt existe! > c:\windows\scan17.txt
+goto scanevilp18
+:scanevilp18
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator19.txt" goto scanevil18
+goto scanevilp19
+:scanevil18
+echo Log EvilVaccinator19.txt existe! > c:\windows\scan18.txt
+goto scanevilp19
+:scanevilp19
+if exist "c:\Evil Vaccinator\Scans\EvilVaccinator20.txt" goto scanevil19
+goto scanevilp20
+:scanevil19
+echo Log EvilVaccinator20.txt existe! > c:\windows\scan19.txt
+goto scanevilp20
+:scanevilp20
+echo -------------------- EOF -------------------- > c:\windows\scan20.txt
+cls
+color 1F
+title EvilVaccinator By LordEvil - Auto Scan
+echo.
+echo Auto Scan
+echo.
+echo Completada Etapa_1
+echo Completada Etapa_2
+echo Completada Etapa_3
+echo Completada Etapa_3A
+echo Completada Etapa_3B
+echo Completada Etapa_3C
+goto log
+:log
+cls
+color 1F
+title EvilVaccinator By LordEvil - Preparando Log
+echo.
+echo Etapas completadas....
+echo.
+echo.
+echo Preparando Log... Aguarde o programa terminar para mecher no computador.
+echo (((((((((((((((((((( EOF )))))))))))))))))))) > c:\windows\eof.txt
+copy c:\windows\e1.txt+c:\windows\e2.txt+c:\windows\e3.txt+c:\windows\e4.txt+c:\windows\e5.txt+c:\windows\e7.txt+c:\windows\e6.txt+c:\windows\e7.txt+c:\windows\e8.txt+c:\windows\e9.txt+c:\windows\e10.txt+c:\windows\e11.txt+c:\windows\e12.txt+c:\windows\e7.txt+c:\windows\usb1.txt+c:\windows\usb2.txt+c:\windows\usb3.txt+c:\windows\e7.txt+c:\windows\e13.txt+c:\windows\e7.txt c:\windows\ev1.txt
+copy c:\winodws\ev1.txt+c:\windows\ex1.txt+c:\windows\ex2.txt+c:\windows\ex3.txt+c:\windows\ex4.txt+c:\windows\ex5.txt+c:\windows\ex6.txt+c:\windows\ex7.txt+c:\windows\ex8.txt+c:\windows\e9.txt+c:\windows\ex10.txt+c:\windows\ex11.txt+c:\windows\ex12.txt+c:\windows\ex13.txt+c:\windows\ex14.txt+c:\windows\e7.txt c:\windows\ev2.txt
+copy c:\windows\ev2.txt+c:\windows\scansu.txt+c:\windows\e7.txt+c:\windows\scansu2.txt+c:\windows\e7.txt+c:\windows\mem1.txt+c:\windows\e7.txt+c:\windows\mem2.txt+c:\windows\e7.txt+c:\windows\mem3.txt+c:\windows\e7.txt+c:\windows\mem4.txt+c:\windows\e7.txt+c:\windows\mem5.txt+c:\windows\e7.txt+c:\windows\mem6.txt+c:\windows\e7.txt+c:\windows\mem7.txt+c:\windows\e7.txt+c:\windows\mem8.txt+c:\windows\e7.txt+c:\windows\scansu3.txt+c:\windows\e7.txt+c:\windows\taskmgr1.txt+c:\windows\e7.txt+c:\windows\taskmgr2.txt+c:\windows\e7.txt+c:\windows\taskmgr3.txt+c:\windows\e7.txt+c:\windows\scansu4.txt+c:\windows\e7.txt+c:\windows\safeboot1.txt+c:\windows\e7.txt+c:\windows\safeboot2.txt+c:\windows\safeboot3.txt+c:\windows\e7.txt c:\windows\ev3.txt
+copy c:\windows\ev3.txt+c:\windows\scansu5.txt+c:\windows\e7.txt+c:\windows\scan1.txt+c:\windows\scan2.txt+c:\windows\scan3.txt+c:\windows\scan4.txt+c:\windows\scan5.txt+c:\windows\scan6.txt+c:\windows\scan7.txt+c:\windows\scan8.txt+c:\windows\scan9.txt+c:\windows\scan10.txt+c:\windows\scan11.txt+c:\windows\scan12.txt+c:\windows\scan13.txt+c:\windows\scan14.txt+c:\windows\scan15.txt+c:\windows\scan16.txt+c:\windows\scan17.txt+c:\windows\scan18.txt+c:\windows\scan19.txt+c:\windows\scan20.txt+c:\windows\e7.txt c:\windows\ev4.txt
+copy c:\windows\ev4.txt+c:\windows\eof.txt c:\EvilVaccinator.txt
+goto final
+:final
+start notepad c:\EvilVaccinator.txt
+del /f /q c:\windows\e1.txt
+del /f /q c:\windows\e2.txt
+del /f /q c:\windows\e3.txt
+del /f /q c:\windows\e4.txt
+del /f /q c:\windows\e5.txt
+del /f /q c:\windows\e6.txt
+del /f /q c:\windows\e7.txt
+del /f /q c:\windows\e8.txt
+del /f /q c:\windows\e9.txt
+del /f /q c:\windows\e10.txt
+del /f /q c:\windows\e11.txt
+del /f /q c:\windows\e12.txt
+del /f /q c:\windows\e13.txt
+del /f /q c:\windows\usb1.txt
+del /f /q c:\windows\usb2.txt
+del /f /q c:\windows\usb3.txt
+del /f /q c:\windows\ex1.txt
+del /f /q c:\windows\ex2.txt
+del /f /q c:\windows\ex3.txt
+del /f /q c:\windows\ex4.txt
+del /f /q c:\windows\ex5.txt
+del /f /q c:\windows\ex6.txt
+del /f /q c:\windows\ex7.txt
+del /f /q c:\windows\ex8.txt
+del /f /q c:\windows\ex9.txt
+del /f /q c:\windows\ex10.txt
+del /f /q c:\windows\ex11.txt
+del /f /q c:\windows\ex12.txt
+del /f /q c:\windows\ex13.txt
+del /f /q c:\windows\ex14.txt
+del /f /q c:\windows\scansu.txt
+del /f /q c:\windows\scansu2.txt
+del /f /q c:\windows\scansu3.txt
+del /f /q c:\windows\scansu4.txt
+del /f /q c:\windows\scansu5.txt
+del /f /q c:\windows\mem1.txt
+del /f /q c:\windows\mem2.txt
+del /f /q c:\windows\mem3.txt
+del /f /q c:\windows\mem4.txt
+del /f /q c:\windows\mem5.txt
+del /f /q c:\windows\mem6.txt
+del /f /q c:\windows\mem7.txt
+del /f /q c:\windows\mem8.txt
+del /f /q c:\windows\taskmgr1.txt
+del /f /q c:\windows\taskmgr2.txt
+del /f /q c:\windows\taskmgr3.txt
+del /f /q c:\windows\safeboot1.txt
+del /f /q c:\windows\safeboot2.txt
+del /f /q c:\windows\safeboot3.txt
+del /f /q c:\windows\scan1.txt
+del /f /q c:\windows\scan2.txt
+del /f /q c:\windows\scan3.txt
+del /f /q c:\windows\scan4.txt
+del /f /q c:\windows\scan5.txt
+del /f /q c:\windows\scan6.txt
+del /f /q c:\windows\scan7.txt
+del /f /q c:\windows\scan8.txt
+del /f /q c:\windows\scan9.txt
+del /f /q c:\windows\scan10.txt
+del /f /q c:\windows\scan11.txt
+del /f /q c:\windows\scan12.txt
+del /f /q c:\windows\scan13.txt
+del /f /q c:\windows\scan14.txt
+del /f /q c:\windows\scan15.txt
+del /f /q c:\windows\scan16.txt
+del /f /q c:\windows\scan17.txt
+del /f /q c:\windows\scan18.txt
+del /f /q c:\windows\scan19.txt
+del /f /q c:\windows\scan20.txt
+del /f /q c:\windows\eof.txt
+exit
